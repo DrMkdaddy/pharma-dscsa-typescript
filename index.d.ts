@@ -2,15 +2,15 @@ export interface RapidApiConfig {
   /**
    * RapidAPI Proxy Key ('x-rapidapi-key').
    * Required to authenticate requests via RapidAPI.
-   * Obtain your dedicated API key at: https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization
+   * Obtain your dedicated API key at: https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee
    */
   apiKey?: string;
   /**
-   * Custom endpoint URL override. Defaults to 'https://us-fda-dscsa-eu-fmd-prescription-drug-serialization.p.rapidapi.com'.
+   * Custom endpoint URL override. Defaults to 'https://fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee.p.rapidapi.com'.
    */
   baseUrl?: string;
   /**
-   * RapidAPI Host header. Defaults to 'us-fda-dscsa-eu-fmd-prescription-drug-serialization.p.rapidapi.com'.
+   * RapidAPI Host header. Defaults to 'fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee.p.rapidapi.com'.
    */
   rapidApiHost?: string;
 }

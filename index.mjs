@@ -1,7 +1,7 @@
 export class PharmaDscsaClient {
   constructor(config = {}) {
     this.apiKey = config.apiKey || (typeof process !== 'undefined' ? process.env?.RAPIDAPI_KEY || '' : '');
-    this.rapidApiHost = config.rapidApiHost || 'us-fda-dscsa-eu-fmd-prescription-drug-serialization.p.rapidapi.com';
+    this.rapidApiHost = config.rapidApiHost || 'fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee.p.rapidapi.com';
     this.baseUrl = config.baseUrl || `https://${this.rapidApiHost}`;
   }
 
@@ -9,9 +9,9 @@ export class PharmaDscsaClient {
     if (!this.apiKey) {
       return {
         success: false,
-        error: 'RapidAPI API key is required. Obtain a key at: https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization',
+        error: 'RapidAPI API key is required. Obtain a key at: https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee',
         code: 'MISSING_API_KEY',
-        subscribe_url: 'https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization'
+        subscribe_url: 'https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee'
       };
     }
 
@@ -36,7 +36,7 @@ export class PharmaDscsaClient {
         success: false,
         error: err?.message || 'Network request failed',
         code: 'NETWORK_ERROR',
-        subscribe_url: 'https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/us-fda-dscsa-eu-fmd-prescription-drug-serialization'
+        subscribe_url: 'https://rapidapi.com/noor-mkdad-apis-noor-mkdad-apis-default/api/fda-dscsa-eu-fmd-drug-serialization-api-21-usc-360eee'
       };
     }
   }

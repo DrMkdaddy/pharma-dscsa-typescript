@@ -1,6 +1,6 @@
 {
   "name": "@noor-mkdad/pharma-dscsa-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official zero-dependency, high-speed JavaScript/TypeScript client for FDA DSCSA & EU FMD Drug Serialization API (21 USC 360eee)",
   "main": "./index.cjs",
   "module": "./index.mjs",
