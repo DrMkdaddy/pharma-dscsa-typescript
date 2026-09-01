@@ -1,6 +1,6 @@
 {
   "name": "@noor-mkdad/pharma-dscsa-client",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Official zero-dependency, high-speed JavaScript/TypeScript client for FDA DSCSA & EU FMD Drug Serialization API (21 USC 360eee)",
   "main": "./index.cjs",
   "module": "./index.mjs",
@@ -24,7 +24,17 @@
     "gtin",
     "track-and-trace",
     "ndc-converter",
-    "pharma"
+    "pharma",
+    "pharma-dscsa",
+    "dscsa",
+    "2011-62-eu",
+    "falsified-medicines",
+    "drug-serialization",
+    "ndc-to-gtin",
+    "gtin-14",
+    "fnc1",
+    "gs1-datamatrix",
+    "vrs-router"
   ],
   "author": "Noor Mkdad",
   "license": "MIT",
